@@ -191,7 +191,7 @@ class Home extends Component {
         </CardContainer>
       </MetamaskCard>
 
-      <StyledCard minHeight={102}>
+      {/* <StyledCard minHeight={102}>
         <CardContainer>
           <LogoSection>
             <LedgerLogo />
@@ -213,9 +213,9 @@ class Home extends Component {
             </LedgerButton>
           </Link>
         </CardContainer>
-      </StyledCard>
+      </StyledCard> */}
 
-      <StyledCard minHeight={102}>
+      {/* <StyledCard minHeight={102}>
         <CardContainer>
           <LogoSection>
             <TrezorLogo />
@@ -237,9 +237,9 @@ class Home extends Component {
             </LedgerButton>
           </Link>
         </CardContainer>
-      </StyledCard>
+      </StyledCard> */}
 
-      <StyledCard>
+      {/* <StyledCard>
         <CardContainer>
           <LogoSection>
             <StyledWalletConnectLogo />
@@ -263,7 +263,7 @@ class Home extends Component {
             {lang.t('homepage.connect_walletconnect.button')}
           </StyledWalletConnectButton>
         </CardContainer>
-      </StyledCard>
+      </StyledCard> */}
     </BaseLayout>
   );
 }

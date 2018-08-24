@@ -13,7 +13,7 @@ import Notification from '../components/Notification';
 import Warning from '../components/Warning';
 import { modalOpen } from '../reducers/_modal';
 import Modals from '../modals';
-import balanceManagerLogo from '../assets/balance-manager-logo.svg';
+import balanceManagerLogo from '../assets/juris-logo.png';
 import ethereumNetworks from '../references/ethereum-networks.json';
 import nativeCurrencies from '../references/native-currencies.json';
 import { ledgerUpdateNetwork } from '../reducers/_ledger';
@@ -67,6 +67,7 @@ const StyledBalanceLogo = styled.div`
   width: 198px;
   height: 23px;
   background: url(${balanceManagerLogo}) no-repeat;
+  background-size: contain;
   @media screen and (${responsive.sm.max}) {
   }
 `;
