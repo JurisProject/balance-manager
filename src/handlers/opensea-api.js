@@ -23,6 +23,14 @@ const api = axios.create({
  */
 export const apiGetAccountUniqueTokens = async (address = '') => {
   const data = await api.get(`/assets?owner=${address}`);
-  const result = parseAccountUniqueTokens(data);
+  var result = parseAccountUniqueTokens(data);
+  result.push({
+    imageUrl:
+      'https://ucarecdn.com/5068174e-0fac-41f9-8a61-b0cf288b2843/Wave12018Card.jpg',
+    name: 'Juris Wave 1',
+    id: '1',
+    background: '#fff',
+    contractAddress: '0x0',
+  });
   return result;
 };

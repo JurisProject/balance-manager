@@ -6,14 +6,14 @@ import lang from '../languages';
 import Link from '../components/Link';
 import BaseLayout from '../layouts/base';
 import Card from '../components/Card';
-import SubscribeForm from '../components/SubscribeForm';
+// import SubscribeForm from '../components/SubscribeForm';
 import Button from '../components/Button';
 import metamaskLogoImage from '../assets/metamask-logo.png';
 import ledgerLogoImage from '../assets/ledger-logo.svg';
 import walletConnectLogoImage from '../assets/walletconnect-logo-and-type.svg';
 import trezorLogoImage from '../assets/trezor-logo.svg';
 import { walletConnectHasValidSession } from '../reducers/_walletconnect';
-import { getWalletConnectAccount } from '../handlers/localstorage';
+// import { getWalletConnectAccount } from '../handlers/localstorage';
 import { modalOpen } from '../reducers/_modal';
 import { colors, fonts, responsive } from '../styles';
 
@@ -52,10 +52,10 @@ const ConnectButton = styled(Button)`
   top: 29px;
 `;
 
-const LogoSection = styled.div`
-  flex: none;
-  position: relative;
-`;
+// const LogoSection = styled.div`
+//   flex: none;
+//   position: relative;
+// `;
 
 const LogoText = styled.p`
   color: #666;
@@ -79,22 +79,22 @@ const LedgerAffiliateLink = styled.a`
   }
 `;
 
-const LedgerButton = ConnectButton.extend`
-  &:hover {
-    background: #454852;
-  }
-  &:active {
-    background: #2b2d33;
-  }
-`;
+// const LedgerButton = ConnectButton.extend`
+//   &:hover {
+//     background: #454852;
+//   }
+//   &:active {
+//     background: #2b2d33;
+//   }
+// `;
 
-const LedgerLogo = styled.div`
-  background-image: url(${ledgerLogoImage});
-  background-repeat: no-repeat;
-  background-size: 100%;
-  height: 28px;
-  width: 100px;
-`;
+// const LedgerLogo = styled.div`
+//   background-image: url(${ledgerLogoImage});
+//   background-repeat: no-repeat;
+//   background-size: 100%;
+//   height: 28px;
+//   width: 100px;
+// `;
 
 const MetamaskButton = ConnectButton.extend`
   &:hover {
@@ -126,30 +126,30 @@ const MetamaskLogoText = styled(LogoText)`
   margin: 0 20px 0 176px;
 `;
 
-const TrezorLogo = styled.div`
-  background-image: url(${trezorLogoImage});
-  background-repeat: no-repeat;
-  background-size: 100%;
-  height: 31px;
-  width: 109px;
-`;
+// const TrezorLogo = styled.div`
+//   background-image: url(${trezorLogoImage});
+//   background-repeat: no-repeat;
+//   background-size: 100%;
+//   height: 31px;
+//   width: 109px;
+// `;
 
-const StyledWalletConnectLogo = styled.div`
-  margin: 22px 0 8px 0;
-  height: 32px;
-  background: url(${walletConnectLogoImage});
-  background-size: contain;
-  background-repeat: no-repeat;
-`;
+// const StyledWalletConnectLogo = styled.div`
+//   margin: 22px 0 8px 0;
+//   height: 32px;
+//   background: url(${walletConnectLogoImage});
+//   background-size: contain;
+//   background-repeat: no-repeat;
+// `;
 
-const StyledWalletConnectButton = ConnectButton.extend`
-  &:hover {
-    background: #454852;
-  }
-  &:active {
-    background: #2b2d33;
-  }
-`;
+// const StyledWalletConnectButton = ConnectButton.extend`
+//   &:hover {
+//     background: #454852;
+//   }
+//   &:active {
+//     background: #2b2d33;
+//   }
+// `;
 
 class Home extends Component {
   onWalletConnectInit = () => {

@@ -2,7 +2,7 @@ import React from 'react';
 import ReactDOM from 'react-dom';
 import { injectGlobal } from 'styled-components';
 import { globalStyles } from './styles';
-import { bootIntercom } from './helpers/utilities';
+// import { bootIntercom } from './helpers/utilities';
 import { getLanguage } from './handlers/localstorage';
 import lang, { resources } from './languages';
 import Root from './Root';

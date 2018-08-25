@@ -31,7 +31,7 @@ import {
 } from '../handlers/localstorage';
 import { web3SetHttpProvider } from '../handlers/web3';
 import { notificationShow } from './_notification';
-import { exchangeUpdateExchangeDetails } from './_exchange';
+// import { exchangeUpdateExchangeDetails } from './_exchange';
 import nativeCurrencies from '../references/native-currencies.json';
 
 // -- Constants ------------------------------------------------------------- //
